@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thanh toán VNPay</title>
+  <link rel="stylesheet" href="assets/css/thanhtoan.css">
+</head>
+<body>
+  <div class="payment-wrapper">
+    <header class="header">
+      <div class="logo">
+        <img src="assets/img/logo.jpg" alt="VNPay">
+      </div>
+      <div class="timer">
+        <span>Thời gian còn lại</span>
+        <div class="countdown">
+          <span class="minutes">14</span> : <span class="seconds">04</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <!-- Thông tin đơn hàng -->
+      <section class="order-info">
+        <h3>Thông tin đơn hàng (Test)</h3>
+        <p class="label">Số tiền thanh toán</p>
+        <p class="amount">200,000 <span>VNĐ</span></p>
+
+        <p class="label">Tổng đơn hàng</p>
+        <p>200,000 VNĐ</p>
+
+        <p class="label">Phí giao dịch</p>
+        <p>0 VNĐ</p>
+
+        <p class="label">Mã đơn hàng</p>
+        <p>3520</p>
+
+        <p class="label">Nhà cung cấp</p>
+        <a href="#">https://vnshop.vn/</a>
+      </section>
+
+      <!-- Form thanh toán -->
+      <section class="payment-form">
+        <h2>Tiêu đề thanh toán</h2>
+        <div class="tabs">
+          <span class="active">Thẻ nội địa</span>
+        </div>
+
+        <form>
+          <label>Số thẻ</label>
+          <input type="text" placeholder="Nhập số thẻ">
+
+          <label>Tên chủ thẻ</label>
+          <input type="text" placeholder="Nhập tên chủ thẻ">
+
+          <label>Ngày phát hành</label>
+          <input type="text" placeholder="MM/YY">
+
+          <label>Mã khuyến mãi</label>
+          <input type="text" placeholder="Nhập hoặc chọn mã khuyến mãi">
+
+          <div class="conditions">
+            <input type="checkbox" id="agree">
+            <label for="agree">Tôi đồng ý với các điều kiện</label>
+          </div>
+
+          <div class="buttons">
+            <button type="button" class="cancel">Hủy</button>
+            <button type="submit" class="continue">Tiếp tục</button>
+          </div>
+        </form>
+
+        <div class="secure">
+          <img src="https://www.globalsign.com/application/files/3516/0937/2744/ssl-seal.png" alt="Bảo mật">
+          <span>Đạt chuẩn PCI DSS</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="support">
+        <a href="tel:1900555577">1900.5555.77</a> |
+        <a href="mailto:hotrovnpay@vnpay.vn">hotrovnpay@vnpay.vn</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

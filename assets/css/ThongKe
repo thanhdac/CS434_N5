@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thống kê bán hàng máy tính</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <h2>📊 Thống kê bán hàng máy tính</h2>
+
+  <div class="filter-box">
+    <label for="from">Từ ngày:</label>
+    <input type="date" id="from">
+    <label for="to">Đến ngày:</label>
+    <input type="date" id="to">
+    <select id="type">
+      <option value="day">Theo ngày</option>
+      <option value="month">Theo tháng</option>
+    </select>
+    <button onclick="updateChart()">Lọc dữ liệu</button>
+  </div>
+
+  <div class="chart-container">
+    <canvas id="salesChart"></canvas>
+  </div>
+
+  <script>
+    // Dữ liệu mẫu
+    const labels = ["01", "02", "03", "04", "05", "06", "07"];
+    const data = {
+      labels: labels,
+      datasets: [
+        {
+          label: "Doanh thu (triệu VNĐ)",
+          data: [15, 25, 18, 30, 22, 40, 35],
+          backgroundColor: "rgba(52, 152, 219, 0.7)",
+          borderRadius: 8,
+          yAxisID: 'y',
+        },
+        {
+          label: "Số lượng khách hàng",
+          data: [5, 8, 6, 9, 7, 12, 10],
+          borderColor: "rgba(231, 76, 60, 1)",
+          backgroundColor: "rgba(231, 76, 60, 0.2)",
+          type: 'line',
+          yAxisID: 'y1',
+          tension: 0.3,
+          fill: true
+        }
+      ]
+    };
+
+    const config = {
+      type: 'bar',
+      data: data,
+      options: {
+        responsive: true,
+        interaction: { mode: 'index', intersect: false },
+        stacked: false,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Doanh thu & Khách hàng theo thời gian'
+          }
+        },
+        scales: {
+          y: {
+            type: 'linear',
+            display: true,
+            position: 'left',
+            title: { display: true, text: 'Doanh thu (triệu VNĐ)' }
+          },
+          y1: {
+            type: 'linear',
+            display: true,
+            position: 'right',
+            grid: { drawOnChartArea: false },
+            title: { display: true, text: 'Số lượng KH' }
+          }
+        }
+      },
+    };
+
+    var salesChart = new Chart(
+      document.getElementById("salesChart"),
+      config
+    );
+
+    function updateChart() {
+      alert("Bạn có thể kết nối API để lấy dữ liệu thống kê thực tế!");
+    }
+  </script>
+
+</body>
+</html>

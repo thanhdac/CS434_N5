@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ Hàng</title>
+  <link rel="stylesheet" href="assets/css/GioHang.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Laptop Gear</div>
+    <div class="search">
+      <input type="text" placeholder="Tìm Kiếm...">
+    </div>
+    <div class="info">
+      <span>HOTLINE: 0961 1560999</span>
+      <span>Nguyễn Văn A</span>
+      <a href="#">Giỏ hàng</a>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <a href="#">Danh mục sản phẩm</a>
+    <a href="#">Trang chủ</a>
+    <a href="#">Sản phẩm</a>
+    <a href="#">Hóa đơn</a>
+  </nav>
+
+  <main class="container">
+    <h1 class="title">GIỎ HÀNG</h1>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>Tên Sản Phẩm</th>
+          <th>Đơn Giá</th>
+          <th>Số Lượng</th>
+          <th>Số Tiền</th>
+          <th>Thao Tác</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>
+            <span class="label">Yêu thích</span>
+            <p class="category">Danh mục: mã danh mục</p>
+            <p class="name">Tên sản phẩm...<br><span class="desc">Mô tả sản phẩm</span></p>
+            <p class="sale">Flash Sale bắt đầu lúc: 15:00:00</p>
+            <p class="note">Giảm 500.000 ₫ phí vận chuyển tối đa</p>
+          </td>
+          <td>
+            <span class="old">39.000.000 ₫</span><br>
+            <span class="new">35.000.000 ₫</span>
+          </td>
+          <td>
+            <input type="number" value="1" min="1">
+          </td>
+          <td class="total">35.000.000 ₫</td>
+          <td><a href="#" class="delete">Xóa</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>
+            <span class="label">Yêu thích</span>
+            <p class="name">Tên sản phẩm...<br><span class="desc">Mô tả sản phẩm</span></p>
+            <p class="sale">Flash Sale bắt đầu lúc: 15:00:00</p>
+          </td>
+          <td>
+            <span class="old">36.000.000 ₫</span><br>
+            <span class="new">30.000.000 ₫</span>
+          </td>
+          <td>
+            <input type="number" value="1" min="1">
+          </td>
+          <td class="total">30.000.000 ₫</td>
+          <td><a href="#" class="delete">Xóa</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="cart-footer">
+      <div class="left">
+        <input type="checkbox"> Chọn Tất Cả | 
+        <a href="#">Xóa</a> | 
+        <a href="#">Bỏ sản phẩm không hoạt động</a> | 
+        <a href="#">Lưu vào mục đã thích</a>
+      </div>
+      <div class="right">
+        <span>Tổng cộng (2 sản phẩm): <b>65.000.000 ₫</b></span>
+        <button class="btn-buy">Mua Hàng</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

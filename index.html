@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="#"
+            ><img
+              src="/CodeGiaoDien/Img/logoTechStore.webp"
+              alt="TechStore Logo"
+          /></a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#" class="active">Trang chủ</a></li>
+            <li><a href="#">Laptop</a></li>
+            <li><a href="#">Phụ kiện</a></li>
+            <li><a href="#">Linh kiện</a></li>
+            <li><a href="#">Hỗ trợ</a></li>
+          </ul>
+        </nav>
+        <div class="search-bar">
+          <input type="text" placeholder="Tìm kiếm sản phẩm..." />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="user-actions">
+          <a href="#">Đăng nhập</a>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="product-categories">
+        <h2>Danh Mục Sản Phẩm</h2>
+        <p>
+          Khám phá các danh mục sản phẩm đa dạng với hàng ngàn lựa chọn cho mọi
+          nhu cầu công nghệ của bạn
+        </p>
+        <div class="categories-grid">
+          <div class="category-item">
+            <div class="category-icon blue">
+              <img src="/CodeGiaoDien/Img/LogoLaptop.jpg" alt="Logo Laptop" />
+            </div>
+            <h4>Laptop</h4>
+            <p>150+ sản phẩm</p>
+          </div>
+          <div class="category-item">
+            <div class="category-icon green">
+              <img src="/CodeGiaoDien/Img/OcungLogo.jpg" alt="Logo Ổ cứng" />
+            </div>
+            <h4>Ổ cứng & RAM</h4>
+            <p>200+ sản phẩm</p>
+          </div>
+          <div class="category-item">
+            <div class="category-icon purple">
+              <img src="/CodeGiaoDien/Img/CPULogo.jpg" alt="CPU Logo" />
+            </div>
+            <h4>CPU & GPU</h4>
+            <p>80+ sản phẩm</p>
+          </div>
+          <div class="category-item">
+            <div class="category-icon orange">
+              <img
+                src="/CodeGiaoDien/Img/ManhinhLogo.avif"
+                alt="Màn hình logo"
+              />
+            </div>
+            <h4>Màn hình</h4>
+            <p>120+ sản phẩm</p>
+          </div>
+          <div class="category-item">
+            <div class="category-icon pink">
+              <img
+                src="/CodeGiaoDien/Img/TaingheLogo.jpg"
+                alt="Tai nghe Logo"
+              />
+            </div>
+            <h4>Tai nghe</h4>
+            <p>90+ sản phẩm</p>
+          </div>
+          <div class="category-item">
+            <div class="category-icon teal">
+              <img
+                src="/CodeGiaoDien/Img/PhuKienLogo.jpg"
+                alt="Phụ kiện logo"
+              />
+            </div>
+            <h4>Phụ kiện</h4>
+            <p>300+ sản phẩm</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner-area">
+        <img
+          src="/CodeGiaoDien/Img/bannerQC.jpg"
+          alt="Banner quảng cáo sản phẩm"
+          class="banner-image"
+        />
+      </section>
+
+      <section class="featured-products">
+        <div class="featured-header">
+          <h2>Sản Phẩm Nổi Bật</h2>
+          <p>Khám phá 8 sản phẩm chất lượng cao</p>
+          <div class="filter-controls">
+            <button><i class="fas fa-th-large"></i></button>
+            <button><i class="fas fa-bars"></i></button>
+            <button>Bộ lọc <i class="fas fa-sliders-h"></i></button>
+          </div>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image-container">
+              <span class="sale-tag">Sale 25%</span>
+              <img src="/CodeGiaoDien/Img/kingstonram.jpg" alt="Kingston RAM" />
+              <div class="actions">
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="category-label">RAM & Storage</span>
+              <h4>Kingston RAM DDR4 8GB 2666MHz</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> (128)
+              </div>
+              <div class="price">
+                <span class="current-price">899.000₫</span>
+                <span class="old-price">1.199.000₫</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-basket"></i> Thêm vào giỏ
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image-container">
+              <span class="sale-tag">Sale 13%</span>
+              <img src="/CodeGiaoDien/Img/coreI5.png" alt="Intel Core i5" />
+              <div class="actions">
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="category-label">CPU & GPU</span>
+              <h4>Intel Core i5-12400F 12th Gen</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> (89)
+              </div>
+              <div class="price">
+                <span class="current-price">4.599.000₫</span>
+                <span class="old-price">5.299.000₫</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-basket"></i> Thêm vào giỏ
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image-container">
+              <span class="new-tag">Mới</span>
+              <span class="sale-tag">Sale 19%</span>
+              <img
+                src="/CodeGiaoDien/Img/Asusvivo.webp"
+                alt="ASUS VivoBook 15"
+              />
+              <div class="actions">
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="category-label">Laptop</span>
+              <h4>ASUS VivoBook 15 X515MA</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> (256)
+              </div>
+              <div class="price">
+                <span class="current-price">12.999.000₫</span>
+                <span class="old-price">15.999.000₫</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-basket"></i> Thêm vào giỏ
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card dark-bg-card">
+            <div class="product-image-container">
+              <span class="new-tag">Mới</span>
+              <img
+                src="/CodeGiaoDien/Img/msigaming.webp"
+                alt="MSI Gaming Laptop"
+              />
+              <div class="actions">
+                <i class="far fa-heart"></i>
+                <i class="far fa-eye"></i>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="category-label">Laptop</span>
+              <h4>MSI Gaming Laptop GF63 Thin</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> (142)
+              </div>
+              <div class="price">
+                <span class="current-price">18.999.000₫</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-basket"></i> Thêm vào giỏ
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-info">
+        <div class="service-item">
+          <div class="service-icon blue">
+            <img
+              src="/CodeGiaoDien/Img/freeship.png"
+              alt="Giao hàng miễn phí"
+            />
+          </div>
+          <h4>Giao hàng miễn phí</h4>
+          <p>Miễn phí vận chuyển cho đơn hàng từ 500.000₫</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon green">
+            <img
+              src="/CodeGiaoDien/Img/baohanh.png"
+              alt="Bảo hành chính hãng"
+            />
+          </div>
+          <h4>Bảo hành chính hãng</h4>
+          <p>Cam kết bảo hành chính hãng từ 12-36 tháng</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon purple">
+            <img src="/CodeGiaoDien/Img/hotro24.png" alt="Hỗ trợ 24/7" />
+          </div>
+          <h4>Hỗ trợ 24/7</h4>
+          <p>Đội ngũ hỗ trợ nhiệt tình, sẵn sàng giúp đỡ bạn</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col about">
+          <h4>TechStore</h4>
+          <p>
+            Cửa hàng laptop và phụ kiện điện tử hàng đầu Việt Nam. Chúng tôi cam
+            kết mang đến những sản phẩm chất lượng với giá tốt nhất.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Liên kết nhanh</h4>
+          <ul>
+            <li><a href="#">Về chúng tôi</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Hướng dẫn mua hàng</a></li>
+            <li><a href="#">Tin tức công nghệ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Danh mục</h4>
+          <ul>
+            <li><a href="#">Laptop Gaming</a></li>
+            <li><a href="#">Laptop Văn phòng</a></li>
+            <li><a href="#">RAM & SSD</a></li>
+            <li><a href="#">CPU & GPU</a></li>
+            <li><a href="#">Phụ kiện</a></li>
+          </ul>
+        </div>
+        <div class="footer-col contact">
+          <h4>Liên hệ</h4>
+          <p><i class="fas fa-phone"></i> 1900-1234</p>
+          <p><i class="fas fa-envelope"></i> support@techstore.vn</p>
+          <p><i class="fas fa-map-marker-alt"></i> Đà Nẵng, Việt Nam</p>
+          <h4>Đăng ký nhận tin</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Email của bạn" />
+            <button type="submit">Gửi</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cart-sidebar" id="cart-sidebar"></div>
+  </body>
+</html>
